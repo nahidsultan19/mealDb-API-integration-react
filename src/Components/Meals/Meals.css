@@ -5,7 +5,8 @@
 }
 .meals{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
+    margin: auto;
 }
 
 
@@ -15,3 +16,30 @@
     position: sticky;
     top: 0;
 }
+
+@media screen and (max-width:688px) {
+    .meals-container{
+        display: flex;
+        flex-direction: column;
+    }
+   .meals{
+       display: grid;
+       grid-template-columns: repeat(1,1fr);
+       width: 90%;
+       margin:0 auto;
+   }
+  
+   
+}
+
+@media only screen and (min-width:688px) and (max-width:992px){
+    .meals-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .meals{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
