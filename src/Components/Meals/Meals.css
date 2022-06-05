@@ -1,16 +1,17 @@
-.meals-container{
+.meals-container {
     display: flex;
     justify-content: space-between;
     position: sticky;
 }
-.meals{
+
+.meals {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     margin: auto;
 }
 
 
-.order-summary{
+.order-summary {
     background-color: bisque;
     padding: 30px;
     position: sticky;
@@ -18,28 +19,29 @@
 }
 
 @media screen and (max-width:688px) {
-    .meals-container{
+    .meals-container {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
-   .meals{
-       display: grid;
-       grid-template-columns: repeat(1,1fr);
-       width: 90%;
-       margin:0 auto;
-   }
-  
-   
-}
 
-@media only screen and (min-width:688px) and (max-width:992px){
-    .meals-container{
-        display: flex;
-        flex-direction: column;
-    }
-    .meals{
+    .meals {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(1, 1fr);
+        width: 90%;
+        margin: 0 auto;
     }
+
+
 }
 
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .meals-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .meals {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

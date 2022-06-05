@@ -1,8 +1,9 @@
-.header{
+.header {
     background-color: blueviolet;
-    
+
 }
-.navbar{
+
+.navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -11,33 +12,37 @@
     margin-right: 50px;
     /* margin: auto; */
     font-size: 20px;
-    
+
 }
-.navbar a{
+
+.navbar a {
     text-decoration: none;
     color: #fff;
 }
-.navbar-container a{
+
+.navbar-container a {
     margin-left: 20px;
 }
 
 
 
-@media screen and (max-width:688px){
-    .navbar .logo{
+@media screen and (max-width:688px) {
+    .navbar .logo {
         margin: auto;
         text-align: center;
         font-size: 22px;
         font-weight: bold;
     }
-    .navbar-container{
+
+    .navbar-container {
         display: none;
+
     }
-    
+
 }
 
-@media only screen and (min-width:688px) and (max-width:992px){
-    .header{
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .header {
         width: 100%;
     }
 }
